@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./Vue.js"></script>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button @click="show">变色</button>
+        <div class="box1" v-show="flage"></div>
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                flage: false
+            },
+            methods:{
+                show:function () {
+                    this.flage = !this.flage;
+                }
+            }
+        })
+    </script>
+</body>
+</html>

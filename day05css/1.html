@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        div{
+            width: 100px;
+            /*height: 100px;*/
+        }
+        .box1{
+            background: red;
+            float: left;
+            /*float: right;*/
+            /*浮动：
+             左浮动：float:left
+             右浮动：float:right
+             1.浮动会让元素脱离文档流，后面不浮动的元素会占据原来的位置
+             2.停止浮动：
+                    a.踫到父级元素的边界会停止
+                    b.踫到前面有浮动的元素(紧跟在浮动元素之后排列）
+                    c.踫到没有浮动的元素
+
+             3.浮动会把元素转换成行内块元素（让元素并在一行）
+             4.当父级元素没有设置固定高度时，子元素都浮动，父级元素的高度就法撑开
+                解决方法：给父级元素添加overflow:hidden;
+             5.当父级元素不够时，浮动元素就会换行
+
+            */
+        }
+        .box2{
+            width: 150px;
+            background: green;
+            float: left;
+        }
+        .box3{
+            width: 180px;
+            background: blueviolet;
+            float: left;
+        }
+        .box4{
+            background: yellow;
+        }
+        .wap{
+            width: 500px;
+            border: cornflowerblue 5px solid;
+            overflow: hidden;
+        }
+        .item1{
+            width: 100px;
+            height: 100px;
+            background: brown;
+            float:left;
+        }
+        .item2{
+            width: 100px;
+            height: 100px;
+            background: darkturquoise;
+            float: left;
+        }
+        .item3{
+            width: 220px;
+            height: 100px;
+            background: aquamarine;
+            float: left;
+        }
+        .item4{
+            width: 200px;
+            height: 100px;
+            background: fuchsia;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="wap">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        <div class="item4">item4</div>
+    </div>
+</body>
+</html>

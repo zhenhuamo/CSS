@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pc布局</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        /*去除下划线*/
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .header{
+            width: 100%;
+            /*height: 50px;*/
+            background: red;
+        }
+        .header-top{
+            width: 100%;
+            height: 30px;
+            background: #cccccc;
+        }
+        .header-top a{
+            /*display: inline-block;*/
+            float: left;
+            height: 30px;
+            line-height: 30px;
+        }
+        .header-a-1{
+            width: 420px;
+            margin-left: 137px;
+            text-align: center;
+            background: aqua;
+
+        }
+        .header-a-2{
+            width: 88px;
+            text-align: center;
+        }
+        .header-a{
+            width: 80px;
+            text-align: center;
+        }
+        .header-top-content{
+            width: 1205px;
+            height: 30px;
+            margin: 0 auto;
+            background: fuchsia;
+        }
+        .header-nav{
+            width:100%;
+            height: 41px;
+            border: 1px honeydew solid;
+        }
+        .header-nav-content{
+            width: 1205px;
+            height: 41px;
+            margin: 0 auto;
+            font-size: 14px;
+            /*color: honeydew;*/
+            background: honeydew;
+        }
+        .header-nav-1{
+            width: 116px;
+            height: 41px;
+            text-align: center;
+            line-height: 41px;
+            float: left;
+        }
+        .header-nav-2{
+            width:120px;
+            height: 41px;
+            text-align: center;
+            line-height: 41px;
+            float: right;
+        }
+        .header-nav-3{
+            width: 70px;
+            height: 41px;
+            text-align: center;
+            line-height: 41px;
+            float: right;
+        }
+        .header-nav-4{
+            width: 90px;
+            height: 30px;
+            text-align: center;
+            line-height: 41px;
+            float: right;
+
+        }
+
+        .content{
+            width: 100%;
+            height: 1000px;
+            background: blue;
+        }
+        .content-nav{
+            width:100%;
+            height: 106px;
+            background: green;
+        }
+        .content-nav-content{
+            width: 1205px;
+            height: 106px;
+            margin: 0 auto;
+            background: white;
+            color: black;
+        }
+        .content-nav-logo{
+            width: 202px;
+            height: 90px;
+            font-size: 30px;
+            line-height: 90px;
+            text-align: center;
+            float: left;
+        }
+        .content-nav-login{
+            width: 338px;
+            height: 88px;
+            background: aqua;
+            float: right;
+        }
+        .content-nav a{
+            text-align: center;
+            line-height: 88px;
+            font-size: 14px;
+            margin: 2px;
+            float: left;
+        }
+        .loanding{
+            width: 65px;
+
+        }
+        .mystudy{
+            width: 56px;
+
+        }
+        .backstge{
+            width: 56px;
+
+        }
+
+        .content-mainnav{
+            width: 100&;
+            height: 33px;
+            background: white;
+        }
+        .content-mainnav-findnav{
+            width: 1205px;
+            height: 33px;
+            background: #cccccc;
+            margin: 0 auto;
+            line-height: 33px;
+            color: black;
+        }
+        .activ{
+            width: 32px;
+            height: 33px;
+            margin: 0 40px 0 0;
+            float: left;
+        }
+        .courstCat{
+            width: 64px;
+            height: 17px;
+            margin: 0 40px 0 0;
+            float: left;
+        }
+        .nitem{
+            width: 48px;
+            height: 33px;
+            margin: 0 40px 0 0;
+            float: left;
+
+        }
+        .vip{
+            width: 64px;
+            height: 33px;
+            margin: 0 40px 0 0;
+            float: left;
+        }
+        .downapp{
+            width:86px;
+            height: 33px;
+            float: right;
+        }
+        .vipbuy{
+            width: 70px;
+            height: 33px;
+            margin: 0 40px 0 0;
+            float: right;
+
+        }
+
+
+
+
+        .footer{
+            width: 100%;
+            height: 100px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <!--页面的头部-->
+    <div class="header">
+        <div class="header-top">
+            <div class="header-top-content">
+                <a href="#"class="header-a-1">3月开工季</a>
+                <a href="#"class="header-a-2">微专业</a>
+                <a href="#"class="header-a">办公效率</a>
+                <a href="#"class="header-a">生活法式</a>
+                <a href=""class="header-a">职场提升</a>
+                <a href=""class="header-a">产品设计</a>
+                <a href=""class="header-a">编程开发</a>
+                <a href=""class="header-a">语言学习</a>
+                <a href=""class="header-a">亲子教育</a>
+            </div>
+        </div>
+        <div class="header-nav">
+            <div class="header-nav-content">
+                <div class="header-nav-1">创造学习</div>
+                <div class="header-nav-2">中国大学MOOC</div>
+                <div class="header-nav-3">网易100分</div>
+                <div class="header-nav-4">极客战记</div>
+            </div>
+        </div>
+    </div>
+    <!--页面的内容部分-->
+    <div class="content">
+        <!--内容的第一部分-->
+        <div class="content-nav">
+            <div class="content-nav-content">
+                <div class="content-nav-logo">网易云课堂</div>
+                <div class="content-nav-login">
+                    <a href="#" class="loanding">登陆/注册</a>
+                    <a href="#" class="mystudy">我的学习</a>
+                    <a href="#" class="backstge">管理后台</a>
+                </div>
+            </div>
+        </div>
+        <!--内空的第二部分-->
+        <div class="content-mainnav">
+            <div class="content-mainnav-findnav">
+                <a href="#"class="activ">首页</a>
+                <div class="courstCat" >课程分类</div>
+                <a href="#"class="nitem">微专业</a>
+                <a href="#"class="vip">会员中心</a>
+                <span class="downapp" data-index="下载APP" data-href="#">下载APP</span>
+                <a href="#"class="vipbuy">会员团购</a>
+            </div>
+        </div>
+        <!--内空的第三部分-->
+        <div class="content-class"></div>
+        <!--内容的第四部分-->
+        <div class="content-item4"></div>
+        <!--内容的第五部分-->
+        <div class="content-item5"></div>
+
+    </div>
+    <!--页面的尾部-->
+    <div class="footer"></div>
+</body>
+</html>

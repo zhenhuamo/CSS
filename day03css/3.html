@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>边框属性</title>
+        <style>
+            .item{
+                width:200px;
+                height: 200px;
+                /*
+                border设置边框
+                注意：设置边框时候，有三个值一个都不能丢(线宽 样式 颜色）
+
+                */
+                /*border:3px solid #000000;*/
+                /*border:2px dotted #F10914;*/
+                /*border: 2px dashed #12AFF2;*/
+                /*单独设置上边框*/
+                border-top: 2px solid red;
+                /*单独设置下边框*/
+                border-bottom: 2px dotted gold;
+                /*单独设置左边框*/
+                border-left: 2px dotted deeppink;
+                /*单独设置左边框*/
+                border-right: 2px dashed cyan;
+
+            }
+
+            .box{
+                width: 200px;
+                height: 200px;
+                border: red 2px solid;
+                /*边框设置圆角*/
+                /*border-radius: 50%;*/
+                /*
+                给每一个角设定属性：
+                    第一个值设置左上角
+                    第二个值设置右上角
+                    第三个值设置右下角
+                    第四个值设置左下解
+                    （顺时针方向
+                */
+                border-radius: 20px 10px 30px 50px;
+            }
+        </style>
+</head>
+<body>
+    <div class="item"></div>
+    <div class="box"></divc>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        /*清除默认的内外边距*/
+        *{margin: 0;padding: 0}
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: red;
+            /*margin: 0 50px;*/
+            /*通过posittion：设置元素的定位
+                relative:相对定位 以元素本身位置作为参考点进行偏移
+                不会脱离文档流
+
+            */
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: blue;
+            /*设置绝对位置 position:absolute
+              以有定位属性的父级为参考点进行偏移
+              如果父级元素没有定位属性，继续向上一级元素找，
+              如果找到就以该级元素作为参考点
+              如果一直没找到就以body作为参考点进行偏移
+              会脱离文档流，不占文档位置
+            */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background: blueviolet;
+        }
+        .wap{
+            width: 500px;
+            height: 300px;
+            border: 2px solid red;
+            position: absolute;
+            left: 100px
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background: fuchsia;
+            /*
+            设置绝对位置 position:absolute
+              以有定位属性的父级为参考点进行偏移
+              如果父级元素没有定位属性，继续向上一级元素找，
+              如果找到就以该级元素作为参考点
+              如果一直没找到就以body作为参考点进行偏移*/
+            position: absolute;
+            left: 100px;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="wap">
+        <div class="box4"></div>
+    </div>
+</body>
+</html>

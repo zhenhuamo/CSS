@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组</title>
+</head>
+<body>
+<script>
+    //定义数组的方法
+    var arr = new Array(1,2,3,4);
+    console.log(arr);
+    var list = ['1',2,'zhenhua',4];
+    console.log(list);
+
+    //数组的操作 获取数组长度
+    console.log(list.length);
+    //获取数组索引为0的元素
+    console.log(list[0]);
+    //修改数组当中索引为1的元素
+    list[1] = '12cm'
+    console.log(list);
+    //给数组的最后添加元素
+    list.push('peter','man',12);
+    console.log(list);
+    //删除数组最后一个元素
+    list.pop();
+    console.log(list);
+    //在数组的前面增加元素unshift()
+    list.unshift(0,1);
+    //在数组的前面删除第一个元素
+    list.shift();
+
+
+
+    //增加或者删除数组中的元素splice()替换
+        //如果只有一个参数 那就是从指定索引的元素之后开始删除所有剩下的元素
+        //如果传两个参数 那就是从指定索引的元素之后开始删除几个元素 第二个参数是指定删除元素的个数
+        //第三个参数或者多个参数 是表示从第三个参数开始之后的元素都是用来替换删除的元素
+
+    // list.splice(4);
+    list.splice(4,1,5,6,7);
+
+</script>
+</body>
+</html>

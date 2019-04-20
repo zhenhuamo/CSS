@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        <!--清除默认的内个框 -->
+        *{margin: 0; padding: 0;}
+        #item1{
+            width: 100px;
+            height: 100px;
+            margin: 0 0 0 0;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="item1"></div>
+    <script>
+
+        //获取元素对象
+        window.onload = function () {
+            var Odiv = document.getElementById('item1');
+            var i = 0;
+            var set = setInterval(function () {
+                Odiv.style.marginLeft = i + 'px';
+                 i++;
+                 if (i == 1000){
+                     clearInterval(set);
+                 }
+        },10)
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

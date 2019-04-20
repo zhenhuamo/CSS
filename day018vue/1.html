@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctment</title>
+    <script src="Vue.js"></script>
+</head>
+<body>
+    <!--创建容器-->
+    <!--挂载点-->
+    <div id="app">
+        {{msg}}
+    </div>
+    <script>
+        //创建vue实例
+        //el:挂载元素
+        //vue只处理挂载点的内容
+        //模板：挂载点里面的内容成为模板
+        /*
+        实例:new Vue
+            自动结合模板和数据，生成内容，将生成的内容发到挂载点
+        */
+        var Vm = new Vue({
+            el:'#app',
+            data:{
+                msg:'你好',
+            }
+        })
+    </script>
+</body>
+</html>

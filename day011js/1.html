@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象</title>
+</head>
+<body>
+    <script>
+        //1.通过系统内置的Object()去定义自己的对象
+        var obj = new Object();
+        obj.name = '张三';
+        obj.age = 12;
+        obj.sex = 'man';
+        obj.say = function () {
+            console.log('你要访问说话的方法');
+        }
+            //访问成员属性
+        // console.log(obj.name);
+        //     //访问成员方法
+        // obj.say();
+        //2.直接定义对象
+        var student = {
+            nama:'zhenhua',
+            sex:'man',
+            age:12,
+            say:function () {
+                console.log('我是新方法')
+            }
+        };
+        // //访问成员属性
+        // console.log(student.nama);
+        // //访问成员方法
+        // student.say();
+        // //添加新的成员属性
+        // student.length = '180cm';
+        // console.log(student.length);
+
+        //3.通过构造函数来自定义对象
+        function pen(name, age) {
+            //this 代表当前对象
+            this.name = name;
+            this.age = age;
+            this.say = function () {
+                console.log(this)
+            }
+        }
+        //实例对象
+        var man = new pen('李四',12);
+        console.log(man.name);
+        man.say();
+
+        var woman = new pen('小可',28);
+        console.log(woman.age);
+        woman.say();
+
+        //遍历对象
+        for (i in man){
+            console.log(man[i]);
+        }
+    </script>
+</body>
+</html>

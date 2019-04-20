@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式操作</title>
+    <script src="./Vue.js"></script>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+        .box2{
+            border: 3px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div :class="[item1,item2]">1</div>
+        <div :class="{box1:true,box2:flase}">2</div>
+        <div :class="{box1:flag,box2:flag}">3</div>
+        <div v-bind:style="{width:'100px',height:'100px',background:'green'}">4</div>
+        <div :style="{width:w, height:w, background:bg}">5</div>
+        <div :style="json">6</div>
+        <div :style="[json,b]">7</div>
+
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                item1:'box1',
+                item2:'box2',
+                flag:true,
+                w:'100px',
+                bg:'red',
+                json:{
+                    width:'100px',
+                    height:'100px',
+                    background:'green',
+                },
+                b:{
+                    border:'2px solid red'
+                },
+            }
+        })
+    </script>
+</body>
+</html>

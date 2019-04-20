@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css边框阴影属性</title>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                /*第一个值设置水平方向平移 正值往右偏移 负值往左偏移
+                  第二个值设置垂直方向平移 正值向下 负值向上
+                  第三个值设置模糊程度
+                  第四个值设置扩散范围
+                  第五个值设置颜色
+                  第五个值设值是否为内阴影，如果是就设置insert,否则不用设置
+                */
+                /*box-shadow: 5px 10px 10px 10px red;*/
+                border: 2px solid red;
+            }
+            .box:hover{
+                box-shadow: 5px 10px 10px 10px red;
+            }
+        </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

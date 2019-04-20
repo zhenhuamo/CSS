@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机数</title>
+</head>
+<body>
+<script>
+    //取0-1之间的随机数
+    var ran = Math.random();
+    console.log(ran);
+    //取0-10之间的随机数
+    var ten = Math.random() * 10;
+    console.log(ten);
+    //取0-10之间的随机整数
+    var ten_int = Math.floor( Math.random() * 11);
+    console.log(ten_int);
+    //取5-10之间的整数
+    // (10-5+1)   5
+    var five_ten = Math.floor(Math.random()*6) +5;
+    console.log(five_ten);
+    //取任意数之间的整数 m-n之间的整数
+    function rund(m,n){
+        return Math.floor(Math.random()*(n-m+1))+m;
+    }
+    //取10-20之间的整数
+    var res = rund(10,20);
+    console.log(res);
+
+</script>
+</body>
+</html>

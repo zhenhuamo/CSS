@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+    <script src="./Vue.js"></script>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: #119977;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <button v-on:click ='al'>点我</button>
+        <div class="box1" v-on:mouseover="move">移入</div>
+        <input  @keydown.49="down">
+    </div>
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                msg:'ok'
+            },
+            //主要来写函数方法
+            methods:{
+                al:function () {
+                    alert(this.msg)
+                },
+                move:function () {
+                    alert('鼠标移进来了')
+                },
+                down:function () {
+                    console.log('你按下了键盘1')
+                }
+            }
+        })
+    </script>
+</body>
+</html>

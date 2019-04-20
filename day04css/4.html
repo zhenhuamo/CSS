@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素特点</title>
+    <style>
+        .box1{
+            /*块级元素默认的宽度是父级元素的100%
+            独占一行，即使设置了宽度
+            支持所有的样式
+            */
+
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+            line-height: 200px;
+        }
+        span{
+            /*内联函数
+            不独占一行
+            不支持高度和宽度的属性
+            宽高是由内容撑开
+            只支持margin的左右值
+            只支持padding值
+            */
+            width: 200px;
+            height: 200px;
+            background: green;
+            margin: 20px;
+            /*padding: 20px;*/
+        }
+        input{
+            /*行内元素
+                不独占一行，盒子并行在一起
+                支持所有样式
+                如果不设置宽高属性，name他的宽度由宽高由内容决定
+
+            */
+            width: 100px;
+            height: 100px;
+            /*background: blueviolet;*/
+            margin: 20px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"><b>box</b></div>
+    上面是一个块级元素，<span>他独占一行</span>内联元素不独占一行<br>
+    上面是一个块级元素，<span>他独占一行</span>内联元素不独占一行<br>
+
+    上面是一个块级元素，他独占一行<input type="text">内联元素不独占一行
+</body>
+</html>

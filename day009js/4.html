@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js获取元素</title>
+    <!--<script src = ./5.js></script>-->
+    <style>
+        #item2{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        window.onload = function () {
+            var odiv = document.getElementById('item2');
+            console.log(odiv);
+            //js 可以通过style属性来给元素设置样式 样式是加载在行间的（js添加的样式优先级高）
+            // odiv.style.width = '200px';
+            odiv.style.height = '200px';
+            odiv.style.backgroundColor = 'red';
+            odiv.style.fontSize = '30px'
+            //注意 在设置样式的时候，如果有些双拼永词,font-size要把中横岗去掉，第二个单词首字母大写
+
+            //通过js获取元素的样式 只能获取行间样式
+            console.log(odiv.style.width);
+
+            //js 操作元素的文件内容 innerHTML 一般用来设置内容可以解析标签 获取内容会连标签一起获取
+            // innerText 一般用来获取文本内容，解析不了标签 只能获取文件不能获取标签
+            //注意 会覆盖原来的内容
+            odiv.innerHTML = '<h1>444</h1>';
+            //odiv.innerText = '<h1>123</h1>';
+            //innerHTML 获取元素内容
+            console.log(odiv.innerHTML);
+            console.log(odiv.innerText);
+            //表单值的操作
+            //通过id获取元素对象
+            v1 = document.getElementById('unname');
+            console.log(v1);
+            //获取表单的值 格式 ：元素对象.value
+            console.log(v1.value);
+            //设置表单的值 格式: 元素对象.value = '要设置的值'
+            v1.value = '666';
+
+        }
+    </script>
+    <div id="item1"></div>
+    <div id ='item2' style="">box</div>
+    <input type="text" value="123" name="username" id = 'unname'>
+    <!--<script>-->
+        <!--//获取元素对象-->
+        <!--var odiv = document.getElementById('item1');-->
+        <!--consolelog(odiv);-->
+        <!---->
+    <!--</script>-->
+    <!--<script src="./5.js"></script>-->
+</body>
+</html>
